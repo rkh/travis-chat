@@ -1,7 +1,7 @@
 rvm:
 - 1.9.3
 - 2.0.0
-after_succes: echo after_succes
+after_success: echo after_succes
 before_deploy: echo before_deploy
 after_deploy: echo after_deploy
 deploy:
