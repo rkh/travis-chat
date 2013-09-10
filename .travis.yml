@@ -1,11 +1,13 @@
----
 rvm:
-  - 1.9.3
-  - 2.0.0
+- 1.9.3
+- 2.0.0
+after_succes: echo after_succes
+before_deploy: echo before_deploy
+after_deploy: echo after_deploy
 deploy:
   provider: heroku
   api_key:
-    secure: "Xy/0H+q2q9O9J5+VRrVJDmbRBUEuhb5VeYaiJgvQVsmAMuctvMCdkWs95qyY\nyCtWu01cQ1vYIz8DXG2aDl3jyekjiSU0XihLCVt05M6U657qSz4odHqSkfQQ\n8Haul5wGkdMDTI/6pMI+Ci6EgaBLF5m65W4RUEb71ARyYqyUNGY="
+    secure: QFTQdTIhiOzbYfBcY0dNKQ17VqCiBp08n5Gd8ZhzrGflehzdll/wr2313LA9MYnfjBxZhWmSg0iHG/mqdj8NlC6oa3f6YNU8RNlIxFd1toOokgk/8RE/7qW5ks8FsPbfH5+hcN2UNy8sF6yMJTddTRwj6+0VjrDj4X1BJ/JecAM=
+  app: travis-chat
   on:
-    rvm: 2.0.0
-  run: "rake hello"
+    repo: rkh/travis-chat
