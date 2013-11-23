@@ -11,4 +11,3 @@ deploy:
   app: travis-chat
   on:
     repo: rkh/travis-chat
-    tags: true
